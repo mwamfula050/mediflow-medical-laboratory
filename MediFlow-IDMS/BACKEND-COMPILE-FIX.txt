@@ -1,0 +1,10 @@
+MediFlow backend compile fix
+===========================
+
+Fixed VisitController's unresolved `labs` symbol by injecting LabRepo through
+the controller constructor. No database migration is required for this fix.
+
+After extracting, run from the backend folder:
+  mvn clean spring-boot:run
+
+If Maven reports another compilation error, share the complete error output.
